@@ -16,6 +16,7 @@ var uglifyJs = require('gulp-uglify');
 var minifyCss = require('gulp-minify-css');
 var streamify = require('gulp-streamify');
 var rimraf = require('rimraf');
+var clip = require('gulp-clip-empty-files');
 
 var watch = yargs.argv.watch;
 var build = yargs.argv._.length === 1 && yargs.argv._[0] === 'build';
@@ -62,6 +63,7 @@ gulp.task('style', function () {
 
     var task = function () {
         gulp.src(files)
+            .pipe(clip())
             .pipe(sass().on('error', sass.logError))
             .pipe(iff(build, minifyCss()))
             .pipe(gulp.dest('dist/styles'))
