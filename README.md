@@ -1,4 +1,4 @@
-# Gulp boilerplate - Browserify, Babel (ES6, JSX), React ans Sass
+# Gulp boilerplate - Browserify, Babel (ES6, JSX) and Sass
 
 ## Statics
 
@@ -12,7 +12,9 @@ It's where you should store your `index.html` file for example
 
 You can write `ES6` and `JSX`.
 
-For example, directory structure could be:
+A simple example would be `src/scripts/app.js` => `dist/scripts/app.js`
+
+Here is a more complex example:
 
     src/scripts/
         app1/
@@ -25,6 +27,8 @@ For example, directory structure could be:
             Component5.js
         app1.js
         app2.js
+
+Which would result in `dist/scripts/app1.js` and `dist/scripts/app2.js`
 
 ## Styles
 
