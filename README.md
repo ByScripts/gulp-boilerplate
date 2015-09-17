@@ -4,7 +4,7 @@
 
 ```
 $ mkdir <project-name>
-$ wget -qO- https://github.com/ByScripts/gulp-boilerplate/archive/0.2.3.tar.gz | tar xvz --strip-components=1 -C <project-name>
+$ wget -qO- https://github.com/ByScripts/gulp-boilerplate/archive/0.2.4.tar.gz | tar xvz --strip-components=1 -C <project-name>
 $ cd <project-name>
 $ npm install
 $ gulp --watch
