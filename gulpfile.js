@@ -56,7 +56,7 @@ gulp.task('static', function () {
     task();
 });
 
-gulp.task('styles', function () {
+gulp.task('style', function () {
 
     var files = 'src/styles/**/*.scss';
 
@@ -75,7 +75,7 @@ gulp.task('styles', function () {
     task();
 });
 
-gulp.task('scripts', function () {
+gulp.task('script', function () {
 
     gulp.src('src/scripts/*.js')
         .pipe(tap(function (file, t) {
@@ -109,7 +109,7 @@ gulp.task('scripts', function () {
         }));
 });
 
-gulp.task('default', ['static', 'scripts', 'styles']);
+gulp.task('default', ['static', 'script', 'style']);
 
 gulp.task('build', function () {
     rimraf('dist', function () {
